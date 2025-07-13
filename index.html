@@ -1,182 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STROI MAN LTD EOOD</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+    header {
+      background: #2d2d2d;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    .section h2 {
+      color: #222;
+      font-size: 28px;
+    }
+    .section p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .img-box {
+      margin-top: 30px;
+    }
+    .img-box img {
+      max-width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+  <h1>STROI MAN LTD EOOD</h1>
+  <p>Reliable Freight and Trucking Services</p>
+</header>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+<section class="section">
+  <h2>About Us</h2>
+  <p>STROI MAN LTD EOOD is a professional freight and trucking company based in Bulgaria. We provide long-distance transport solutions with a focus on safety, reliability, and timely deliveries.</p>
+  <div class="img-box">
+    <img src="https://www.claconnect.com/en/-/media/claimages/blogs/twomenshakinghandsoutsidesemitruck.jpg?rev=fd761957408d422ba64e9ebe57e551b6" alt="About Us">
+  </div>
+</section>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<section class="section">
+  <h2>Our Mission</h2>
+  <p>We aim to deliver exceptional transportation services while maintaining the highest standards of integrity and responsibility in every shipment we handle.</p>
+  <div class="img-box">
+    <img src="https://www.freightwaves.com/wp-content/uploads/2020/01/tom_1_29_1.jpg" alt="Mission">
+  </div>
+</section>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<section class="section">
+  <h2>Our Fleet</h2>
+  <p>Our modern fleet of vehicles is equipped with advanced tracking systems, ensuring secure and efficient transport of goods across the region and beyond.</p>
+  <div class="img-box">
+    <img src="https://avatars.mds.yandex.net/i?id=69793812c2280ebc309a4ee631b387cd701beb14-5394611-images-thumbs&n=13" alt="Fleet">
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+<section class="section">
+  <h2>Client-Centered Approach</h2>
+  <p>We believe in building long-term partnerships with our clients through personalized service and transparent communication from pickup to delivery.</p>
+  <div class="img-box">
+    <img src="https://avatars.mds.yandex.net/i?id=8893bd7171280e43b5a09bb5a17ea02b12ef10a9-4433927-images-thumbs&n=13" alt="Client Service">
+  </div>
+</section>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+<section class="section">
+  <h2>Contact Details</h2>
+  <p>
+    <strong>Email:</strong> admin@stroieood.shop<br>
+    <strong>Phone:</strong> +359887940266<br>
+    <strong>Address:</strong> 12 Ul. Dimitar Blagoev str., Pernik, 2300, Bulgaria
+  </p>
+  <div class="img-box">
+    <img src="https://avatars.mds.yandex.net/i?id=8893bd7171280e43b5a09bb5a17ea02b12ef10a9-4433927-images-thumbs&n=13" alt="Contact">
+  </div>
+</section>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<footer>
+  &copy; 2025 STROI MAN LTD EOOD. All rights reserved.
+</footer>
 
 </body>
 </html>
